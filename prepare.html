@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Prepare</title>
+<script src="shared-layout.js" defer></script>
+<style>
+body { margin:0; min-height:100vh; padding-bottom:90px; display:flex; flex-direction:column; font-family: 'HelveticaNeue', arial, serif; color:#111; }
+header { background:white; border-bottom:1px solid #eee; padding:20px 40px; }
+.header-inner { display:flex; justify-content:space-between; align-items:center; }
+nav a { margin-left:25px; text-decoration:none; color:#111; font-weight:600; }
+.container { width:50%; margin:0 auto; }
+.section { padding:80px 0; }
+footer { position:fixed; left:0; right:0; bottom:0; background:#111; color:white; text-align:center; padding:30px; z-index:10; }
+#site-footer { margin-top:auto; }
+@media(max-width:900px){ .container{width:90%;} }
+.hero {
+  background:
+    linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.98) 0%,
+      rgba(245, 245, 245, 0.82) 28%,
+      rgba(245, 245, 245, 0.42) 52%,
+      rgba(245, 245, 245, 0) 72%
+    ),
+    url("images/2017-08-10-stakeholder-engagement-extractives-thumb.jpg") center/cover no-repeat;
+  min-height:300px;
+  display:flex;
+  align-items:center;
+  padding:30px 0;
+  color:#111;
+}
+.hero .container { width:60%; margin:0 0 0 40px; }
+.hero h1 { font-size:48px; }
+.hero p { max-width:700px; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:30px; }
+.card { border-top:3px solid #ff6f00; padding:20px; background:#fafafa; }
+.cta { min-height:180px; margin-bottom:90px; display:flex; align-items:center; justify-content:center; background:#ff6f00; color:white; text-align:center; padding:60px; box-sizing:border-box; }
+.cta h2 { margin:0; }
+@media(max-width:900px){ .grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="hero"><div class="container">
+<h1>Prepare with structure, readiness, and confidence</h1>
+<p>Create meeting kits, align to personas, and bring evidence that matters.</p>
+</div></section>
+
+<section class="section"><div class="container">
+<h2>How We Can Prepare</h2>
+<div class="grid">
+<div class="card"><h3><a href="#" style="color:inherit; text-decoration:none;">Meeting Prep Kits</a></h3><p>Build a client and persona ready pack with a brief, talk tracks, key questions, and cited proof points.</p></div>
+<div class="card"><h3><a href="#" style="color:inherit; text-decoration:none;">Persona Guides & Messaging</a></h3><p>Get role-specific cues (what they care about, language to mirror, do/don't phrasing, and respectful repsonses to objections).</p></div>
+<div class="card"><h3><a href="#" style="color:inherit; text-decoration:none;">Discovery & Workshop Kits</a></h3><p>Access question banks, agendas, and stakeholder maps.</p></div>
+</div>
+</div></section>
+
+<section class="cta"><h2>Preparation turns intent into momentum</h2></section>
+
+<div id="site-footer"></div>
+</body>
+</html>

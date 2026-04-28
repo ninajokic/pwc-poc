@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<script src="shared-layout.js" defer></script>
+<style>
+
+body { margin:0; min-height:100vh; padding-bottom:90px; display:flex; flex-direction:column; font-family: 'HelveticaNeue', arial, serif; color:#111; }
+header { background:white; border-bottom:1px solid #eee; padding:20px 40px; }
+.header-inner { display:flex; justify-content:space-between; align-items:center; }
+nav a { margin-left:25px; text-decoration:none; color:#111; font-weight:600; }
+.container { width:50%; margin:0 auto; }
+.section { padding:80px 0; }
+footer { position:fixed; left:0; right:0; bottom:0; background:#111; color:white; text-align:center; padding:30px; z-index:10; }
+#site-footer { margin-top:auto; }
+@media(max-width:900px){ .container{width:90%;} }
+
+.hero {
+  background:
+    linear-gradient(rgba(17, 17, 17, 0.45), rgba(17, 17, 17, 0.45)),
+    url("images/pwc-website-pic.avif") center/cover no-repeat;
+  min-height:420px;
+  padding:40px 0 100px;
+  color:white;
+}
+.hero .container { width:60%; margin:0 0 0 40px; }
+.hero h1 { font-size:48px; }
+.hero p { max-width:700px; }
+.grid { display:grid; grid-template-columns:repeat(2,1fr); gap:30px; }
+.card { border-top:3px solid #ff6f00; padding:20px; background:#fafafa; }
+.cta { min-height:180px; margin-bottom:90px; display:flex; align-items:center; justify-content:center; background:#ff6f00; color:white; text-align:center; padding:60px; box-sizing:border-box; }
+.cta h2 { margin:0; }
+@media(max-width:900px){ .grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="hero"><div class="container">
+<h1>Turning insight into meaningful business impact</h1>
+<p>Past insights, present impact. Find, adapt, and apply what works for the clients who matter now.</p>
+</div></section>
+
+<section class="section"><div class="container">
+<h2>What We Provide for Consulting LoS</h2>
+<div class="grid">
+<div class="card"><h3><a href="#" style="color:inherit; text-decoration:none;">Discover</a></h3><p>One place to find client, industry, competitor, and solution insights.</p></div>
+<div class="card"><h3><a href="#" style="color:inherit; text-decoration:none;">Prepare</a></h3><p>Persona-based prep kits with discovery questions and relevant stories.</p></div>
+<div class="card"><h3><a href="#" style="color:inherit; text-decoration:none;">Deliver & Learn</a></h3><p>Post-engagement learnings and case write-ups.</p></div>
+<div class="card"><h3><a href="#" style="color:inherit; text-decoration:none;">Trust Builder</a></h3><p>Help colleagues prepare for and conduct conversations in a tailored and respectful way.</p></div>
+</div>
+</div></section>
+
+<section class="cta"><h2>Reuse our best to know each client's world across industries and solutions - so every conversation is empathetic and evidence-led</h2></section>
+
+<div id="site-footer"></div>
+</body>
+</html>
